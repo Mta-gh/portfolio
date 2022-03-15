@@ -16,17 +16,25 @@
     p {
         width: 70%;
         font-size: 1.2em;
+        font-family:  'Ortica Light';
     }
     .contact-button-container {
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         height: 100%;
         // margin-block-start: 1em;
-        a {
-            background-color: $white;
-            // padding: 5px 20px;
-            border-bottom: 1px solid black;
-            cursor: pointer;
+        
+    }
+    .nav-underlinks {
+        background-color: $white;
+        // padding: 5px 20px;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        &:hover {
+            color: aquamarine;
+        border-bottom: 1px solid aquamarine;
+
         }
     }
 }
