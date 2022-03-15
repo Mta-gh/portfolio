@@ -2,4 +2,31 @@
     display: flex;
     gap: 1em;
     padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 2vh 0 4vh;
+    .nav-links {
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    font-weight: 500;
+    font-size: 2em;
+    }
+    p {
+        width: 70%;
+        font-size: 1.2em;
+    }
+    .contact-button-container {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        // margin-block-start: 1em;
+        a {
+            background-color: $white;
+            // padding: 5px 20px;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+    }
 }

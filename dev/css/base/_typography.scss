@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Halibut Var";
+    src: url("../assets/HalibutSerif-Variable.woff2") format("woff2-variations"),
+    url("../assets/HalibutSerif-Variable.ttf") format("truetype-variations");
+    
+}
+
+
+
+@font-face {
+    font-family: "STIX Two";
+    src: url("../assets/STIXTwoText-Italic.woff2") format("woff2"),
+    
+}
+
+@font-face {
+    font-family: "Latitude";
+    src: url("../assets/Latitude-Regular.woff2") format("woff2"),
+    url("../assets/Latitude-Regular.woff") format("woff")
+    
+}
+
+@font-face {
+    font-family: "Director Light";
+    src: url("../assets/Director-Light.woff2") format("woff2"),
+    url("../assets/Director-Light.woff") format("woff")
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
