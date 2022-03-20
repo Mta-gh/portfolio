@@ -49,9 +49,23 @@ img {
 
 
 
-.tilt-card {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    background-color: aquamarine;
+
+
+// animation
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }

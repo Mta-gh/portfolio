@@ -1,0 +1,121 @@
+.tilt-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.img-container {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: filter .2s ease-in-out;
+    &:hover {
+        filter: blur(3px);
+    }
+}
+
+.weather {
+    background-image: url(../img/weather.png);
+}
+
+.simone {
+    background-image: url(../img/simone-scrnsht.png);
+    &:hover {
+        filter: blur(3px) brightness(.9);
+        
+    }
+}
+
+
+.travelista {
+    background-image: url(../img/travelista-scrnsht.png);
+}
+
+.pato {
+    background-image: url(../img/pato-scrnsht.png);
+    &:hover {
+        filter: blur(3px) brightness(.7);
+        
+    }
+}
+
+.tilt-card {
+    position: relative;
+    &::after {
+        text-shadow: 0 0 0.7em rgb(0 0 0 / 40%);
+        // text-shadow: 0 0 0.7em rgb(0 0 0 / 40%),  1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #0000;
+        color: white;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 2em;
+        opacity: 0;
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .3s ease-in-out;
+        filter: blur(10px);
+        
+    }
+    &:hover::after {
+        opacity: 1;
+        filter: blur(0);
+        
+    }
+}
+
+.tilt-card:nth-of-type(1)::after {
+    content: 'Weather App';
+}
+
+.tilt-card:nth-of-type(2)::after {
+    content: 'Simone Café';
+}
+
+.tilt-card:nth-of-type(3)::after {
+    content: 'Travelista';
+}
+
+.tilt-card:nth-of-type(4)::after {
+    content: 'Pato Place';
+}
+
+
+
+
+.scroll {
+    display: flex;
+    width: 100%;
+    
+    div {
+        font-weight: 900;
+        font-size: 4em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: #000;
+        animation: animate 240s -240s linear infinite;
+        will-change: transform;
+        font-family: "Pilowlava", serif;
+        font-weight: 600;
+        font-size: 9em;
+        filter: blur(20px) grayscale(1);
+        letter-spacing: .2em;
+        opacity: .5;
+
+
+        
+        &:nth-child(2) {
+            animation: animate2 240s -120s linear infinite;
+        }
+    }
+    
+    
+}
+
+
+
