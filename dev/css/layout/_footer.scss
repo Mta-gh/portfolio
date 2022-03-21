@@ -22,14 +22,17 @@
     }
     @media screen and (max-width : 768px) {
 
-        .arrow-down {
-            display: inline;
-        }
+        // .arrow-down {
+        //     display: inline;
+        // }
         .arrow-left {
             display: none;
         }
         .git-links {
             padding-bottom: 1em;
+        }
+        div:nth-of-type(2) {
+            flex-direction: column;
         }
     }
 }

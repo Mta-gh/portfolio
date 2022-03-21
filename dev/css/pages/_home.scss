@@ -39,7 +39,6 @@
     background-image: url(../img/pato-scrnsht.png);
     &:hover {
         filter: blur(3px) brightness(.7);
-        
     }
 }
 
@@ -61,7 +60,7 @@
         transition: all .3s ease-in-out;
         filter: blur(10px);
         @media screen and (max-width : 768px) {
-            opacity: 1;
+            // opacity: 1;
         filter: blur(0px);
 
         }
