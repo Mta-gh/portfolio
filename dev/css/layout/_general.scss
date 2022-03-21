@@ -40,6 +40,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     padding-bottom: 5vh;
+    max-width: 100%;
     @media screen and (max-width : 1280px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 4vw;
@@ -48,10 +49,23 @@ img {
 
 
 
-.tilt-card {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    background-color: white;
-    overflow: hidden;
+
+
+// animation
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }

@@ -1,3 +1,12 @@
+.tilt-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-color: white;
+    overflow: hidden;
+}
+
+
 .img-container {
     background-position: center;
     background-size: cover;
@@ -78,6 +87,7 @@
 
 
 
+
 .scroll {
     display: flex;
     width: 100%;
@@ -109,20 +119,3 @@
 
 
 
-@keyframes animate {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes animate2 {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-200%);
-    }
-}
