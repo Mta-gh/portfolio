@@ -8,18 +8,25 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     padding: 2vh 0 4vh;
+    @media screen and (max-width : 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4vw;
+    }
+    
     .nav-links {
     text-decoration: none;
     font-family: 'Space Grotesk', sans-serif;
     color: black;
     font-weight: 500;
     font-size: 2em;
-   
     }
     p {
         width: 70%;
         font-size: 1.2em;
         font-family:  'Ortica Light';
+        @media screen and (max-width : 768px) {
+            width: 100%;
+        }
     }
     .contact-button-container {
         display: flex;

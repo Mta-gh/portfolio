@@ -2,12 +2,35 @@
     display: flex;
     gap: 1em;
     height: 2em;
+    @media screen and (max-width : 768px) { 
+        flex-direction: column;
+    }
+    div {
+        display: flex;
+        gap: 1em;
+    }
     a, p {
         margin: 0;
         font-size: 1.2em;
         font-family: "Ortica Light";
         &:hover {
             color: #7fffd4;
+        }
+    }
+    .arrow-down {
+        display: none;
+    }
+    @media screen and (max-width : 768px) {
+    
+        .arrow-down {
+            display: inline;
+        }
+        .arrow-left {
+            display: none;
+        }
+        .git-links {
+            justify-content: center;
+            padding-bottom: 1em;
         }
     }
 }

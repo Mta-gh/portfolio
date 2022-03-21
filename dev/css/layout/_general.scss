@@ -45,6 +45,10 @@ img {
         grid-template-columns: repeat(2, 1fr);
         gap: 4vw;
     }
+    @media screen and (max-width : 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4vw;
+    }
 }
 
 
