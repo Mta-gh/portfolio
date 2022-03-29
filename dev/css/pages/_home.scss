@@ -42,6 +42,14 @@
     }
 }
 
+.marco {
+    background-image: url(../img/marco.png);
+    background-color: rgb(15,15,15);
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+
 .tilt-card {
     position: relative;
     &::after {
@@ -86,6 +94,10 @@
 
 .tilt-card:nth-of-type(4)::after {
     content: 'Pato Place';
+}
+
+.tilt-card:nth-of-type(5)::after {
+    content: 'Marco Marino';
 }
 
 
