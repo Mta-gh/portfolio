@@ -20,6 +20,9 @@
         animation: slide 15s linear infinite;
         z-index: -1;
         white-space: nowrap;
+        @media screen and (max-width : 768px) {
+            display: none;
+        }
     }
 }
 
