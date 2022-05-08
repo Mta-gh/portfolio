@@ -51,7 +51,7 @@
 
 .nestcam {
     background-image: url(../img/nestcam-screen.jpg);
-    filter: brightness(.98);
+    filter: brightness(.96);
     &:hover {
         filter: blur(3px) brightness(.95);
     }
@@ -59,7 +59,7 @@
 
 .apple {
     background-image: url(../img/apple-screen.jpg);
-    filter: brightness(.98);
+    filter: brightness(.96);
     &:hover {
         filter: blur(3px) brightness(.95);
     }
