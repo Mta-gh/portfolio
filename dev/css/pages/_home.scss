@@ -68,7 +68,7 @@
 
 .tilt-card {
     position: relative;
-    animation: deblur 2s;
+    animation: deblur 1.5s cubic-bezier(.7,.04,1,.42);
     &::after {
         text-shadow: 0 0 0.7em rgb(0 0 0 / 40%);
         color: white;
@@ -172,9 +172,15 @@
     0% {
         opacity: 0;
         filter: blur(30px);
+        // transform: scale(1.2);
     }
+    // 75% {
+    //     transform: scale(1);
+
+    // }
     100% {
         opacity: 1;
         filter: blur(0px);
+
     }
 }

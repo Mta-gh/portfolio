@@ -1,7 +1,7 @@
 .header {
     position: relative;
     overflow: hidden;
-    animation: deblur 1s;
+    animation: deblur 1s cubic-bezier(.53,0,.91,.59);
 
     h1 {
         font-family: "Pilowlava", serif;
