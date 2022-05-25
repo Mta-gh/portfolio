@@ -49,12 +49,27 @@
     background-repeat: no-repeat;
 }
 
+.nestcam {
+    background-image: url(../img/nestcam-screen.jpg);
+    filter: brightness(.96);
+    &:hover {
+        filter: blur(3px) brightness(.95);
+    }
+}
+
+.apple {
+    background-image: url(../img/apple-screen.jpg);
+    filter: brightness(.96);
+    &:hover {
+        filter: blur(3px) brightness(.95);
+    }
+}
+
 
 .tilt-card {
     position: relative;
     &::after {
         text-shadow: 0 0 0.7em rgb(0 0 0 / 40%);
-        // text-shadow: 0 0 0.7em rgb(0 0 0 / 40%),  1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #0000;
         color: white;
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 500;
@@ -80,26 +95,34 @@
     }
 }
 
+// Title
 .tilt-card:nth-of-type(1)::after {
     content: 'Weather App';
 }
 
 .tilt-card:nth-of-type(2)::after {
-    content: 'Simone Café';
-}
-
-.tilt-card:nth-of-type(3)::after {
     content: 'Travelista';
 }
 
-.tilt-card:nth-of-type(4)::after {
+// .tilt-card:nth-of-type(2)::after {
+//     content: 'Simone Café';
+// }
+
+.tilt-card:nth-of-type(3)::after {
     content: 'Pato Place';
 }
 
-.tilt-card:nth-of-type(5)::after {
+.tilt-card:nth-of-type(4)::after {
     content: 'Marco Marino';
 }
 
+.tilt-card:nth-of-type(5)::after {
+    content: 'Nestcam';
+}
+
+.tilt-card:nth-of-type(6)::after {
+    content: 'Apple';
+}
 
 
 
