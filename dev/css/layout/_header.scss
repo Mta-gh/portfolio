@@ -1,6 +1,8 @@
 .header {
     position: relative;
     overflow: hidden;
+    animation: deblur 1s;
+
     h1 {
         font-family: "Pilowlava", serif;
         font-weight: 600;

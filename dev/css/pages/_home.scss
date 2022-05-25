@@ -68,6 +68,7 @@
 
 .tilt-card {
     position: relative;
+    animation: deblur 2s;
     &::after {
         text-shadow: 0 0 0.7em rgb(0 0 0 / 40%);
         color: white;
@@ -100,9 +101,13 @@
     content: 'Weather App';
 }
 
+
+
 .tilt-card:nth-of-type(2)::after {
     content: 'Travelista';
 }
+
+
 
 // .tilt-card:nth-of-type(2)::after {
 //     content: 'Simone Café';
@@ -112,17 +117,23 @@
     content: 'Pato Place';
 }
 
+
+
 .tilt-card:nth-of-type(4)::after {
     content: 'Marco Marino';
 }
+
+
 
 .tilt-card:nth-of-type(5)::after {
     content: 'Nestcam';
 }
 
+
 .tilt-card:nth-of-type(6)::after {
     content: 'Apple';
 }
+
 
 
 
@@ -157,3 +168,13 @@
 
 
 
+@keyframes deblur {
+    0% {
+        opacity: 0;
+        filter: blur(30px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
