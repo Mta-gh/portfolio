@@ -16,6 +16,10 @@
     &:hover {
         filter: blur(3px);
     }
+    @media screen and (max-width : 768px) {
+        width: 95vw;
+        height: calc(95vw/1.7);
+    }
 }
 
 .weather {
@@ -49,20 +53,20 @@
     background-repeat: no-repeat;
 }
 
+.apple, .nestcam {
+    filter: blur(0) brightness(.95);
+    &:hover {
+        filter: blur(3px) brightness(.94);
+    }
+}
+
 .nestcam {
     background-image: url(../img/nestcam-screen.jpg);
-    filter: brightness(.96);
-    &:hover {
-        filter: blur(3px) brightness(.95);
-    }
+    
 }
 
 .apple {
     background-image: url(../img/apple-screen.jpg);
-    filter: brightness(.96);
-    &:hover {
-        filter: blur(3px) brightness(.95);
-    }
 }
 
 
@@ -86,7 +90,6 @@
         transition: all .3s ease-in-out;
         filter: blur(10px);
         @media screen and (max-width : 768px) {
-            // opacity: 1;
         filter: blur(0px);
 
         }
@@ -167,8 +170,6 @@
     
     
 }
-
-
 
 @keyframes deblur {
     0% {
