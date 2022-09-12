@@ -53,10 +53,12 @@
     background-repeat: no-repeat;
 }
 
-.apple, .nestcam {
+.apple, 
+.nestcam,
+.barok {
     filter: blur(0) brightness(.95);
     &:hover {
-        filter: blur(3px) brightness(.94);
+        filter: blur(3px) brightness(.8);
     }
 }
 
@@ -69,6 +71,38 @@
     background-image: url(../img/apple-screen.jpg);
 }
 
+.barok {
+    background-image: url(../img/zomerbar.jpg);
+    
+}
+
+
+.with__details {
+    &::before {
+        text-shadow: 0 0 0.7em rgb(0 0 0 / 40%);
+        color: white;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        text-align: center;
+        opacity: 0;
+        z-index: 5;
+        position: absolute;
+        width: max-content;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .3s ease-in-out;
+        filter: blur(10px);
+        @media screen and (max-width : 768px) {
+            filter: blur(0px);
+        }
+    }
+    &:hover::before {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
 
 .tilt-card {
     position: relative;
@@ -90,100 +124,110 @@
         transition: all .3s ease-in-out;
         filter: blur(10px);
         @media screen and (max-width : 768px) {
-        filter: blur(0px);
-
+            filter: blur(0px);
+            
         }
     }
     &:hover::after {
         opacity: 1;
         filter: blur(0);
-        
     }
 }
 
 // Title
+
 .tilt-card:nth-of-type(1)::after {
-    content: 'Weather App';
+    content: 'Barok Zomerbar';
+}
+.tilt-card:nth-of-type(1)::before {
+    content: 'Design, Html, CSS, JS, Wordpress Integration';
 }
 
 
-
 .tilt-card:nth-of-type(2)::after {
+    content: 'Weather App';
+}
+.tilt-card:nth-of-type(2)::before {
+    content: 'Design, Html, CSS, JS';
+}
+
+
+.tilt-card:nth-of-type(3)::after {
     content: 'Travelista';
 }
 
 
 
 // .tilt-card:nth-of-type(2)::after {
-//     content: 'Simone Café';
-// }
-
-.tilt-card:nth-of-type(3)::after {
-    content: 'Pato Place';
-}
-
-
-
-.tilt-card:nth-of-type(4)::after {
-    content: 'Marco Marino';
-}
-
-
-
-.tilt-card:nth-of-type(5)::after {
-    content: 'Nestcam';
-}
-
-
-.tilt-card:nth-of-type(6)::after {
-    content: 'Apple';
-}
-
-
-
-
-.scroll {
-    display: flex;
-    width: 100%;
-    
-    div {
-        font-weight: 900;
-        font-size: 4em;
-        text-transform: uppercase;
-        white-space: nowrap;
-        color: #000;
-        animation: animate 240s -240s linear infinite;
-        will-change: transform;
-        font-family: "Pilowlava", serif;
-        font-weight: 600;
-        font-size: 9em;
-        filter: blur(20px) grayscale(1);
-        letter-spacing: .2em;
-        opacity: .5;
-
-
-        
-        &:nth-child(2) {
-            animation: animate2 240s -120s linear infinite;
-        }
-    }
-    
-    
-}
-
-@keyframes deblur {
-    0% {
-        opacity: 0;
-        filter: blur(30px);
-        // transform: scale(1.2);
-    }
-    // 75% {
-    //     transform: scale(1);
-
+    //     content: 'Simone Café';
     // }
-    100% {
-        opacity: 1;
-        filter: blur(0px);
-
+    
+    .tilt-card:nth-of-type(4)::after {
+        content: 'Pato Place';
     }
-}
+    
+    
+    
+    .tilt-card:nth-of-type(5)::after {
+        content: 'Marco Marino';
+    }
+    
+    
+    
+    .tilt-card:nth-of-type(6)::after {
+        content: 'Nestcam';
+    }
+    
+    
+    .tilt-card:nth-of-type(7)::after {
+        content: 'Apple';
+    }
+    
+    
+    
+    
+    .scroll {
+        display: flex;
+        width: 100%;
+        
+        div {
+            font-weight: 900;
+            font-size: 4em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            color: #000;
+            animation: animate 240s -240s linear infinite;
+            will-change: transform;
+            font-family: "Pilowlava", serif;
+            font-weight: 600;
+            font-size: 9em;
+            filter: blur(20px) grayscale(1);
+            letter-spacing: .2em;
+            opacity: .5;
+            
+            
+            
+            &:nth-child(2) {
+                animation: animate2 240s -120s linear infinite;
+            }
+        }
+        
+        
+    }
+    
+    @keyframes deblur {
+        0% {
+            opacity: 0;
+            filter: blur(30px);
+            // transform: scale(1.2);
+        }
+        // 75% {
+            //     transform: scale(1);
+            
+            // }
+            100% {
+                opacity: 1;
+                filter: blur(0px);
+                
+            }
+        }

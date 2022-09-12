@@ -92,14 +92,15 @@ a {
 text-decoration: underline;
   }
 
-  a::before {
-    /* Same as before */
-    width: 0;
-    white-space: nowrap;
-  }
-
-  a:hover::before {
-    width: 100%;
-
-  }
+header {
+    a::before {
+        /* Same as before */
+        width: 0;
+        white-space: nowrap;
+      }
+    
+      a:hover::before {
+        width: 100%;
+      }
+}
 
