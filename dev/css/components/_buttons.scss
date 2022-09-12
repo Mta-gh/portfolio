@@ -5,7 +5,7 @@
     border-radius: 5px;
     background: #e0e0e0;
     box-shadow:  20px 20px 40px #c5c5c5,
-            -20px -20px 40px #fbfbfb;
+    -20px -20px 40px #fbfbfb;
     margin: 100px auto;
     animation: grow-btn 5s ;
     // change padding depending on font
@@ -24,7 +24,7 @@
         0 0 0 #fbfbfb;
         background: #e0e0e0;
         filter: blur(1px);
-
+        
     }
 }
 
@@ -33,9 +33,9 @@
     height: fit-content;
     border-radius: 5px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
-
+    
     box-shadow:  15px 15px 30px #c5c5c5,
-            -15px -15px 30px #ffffff;
+    -15px -15px 30px #ffffff;
     margin: 100px auto;
     animation: grow-btn 5s ;
     padding: 10px 20px;
@@ -50,7 +50,7 @@
         box-shadow:  0 0 0 #c5c5c5,
         0 0 0 #fbfbfb;
         background: #e0e0e0;
-
+        
     }
 }
 
@@ -72,3 +72,34 @@
         margin: 5px 0;
     }
 }
+
+a {
+    position: relative;
+    display: inline-block;
+    color: black;
+    overflow: hidden;
+    text-decoration: underline;
+  }
+
+  a::before {
+    position: absolute;
+    content: attr(data-content); /* Prints the value of the attribute */
+    top: 0;
+    left: 0;
+    color: aquamarine;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+text-decoration: underline;
+  }
+
+  a::before {
+    /* Same as before */
+    width: 0;
+    white-space: nowrap;
+  }
+
+  a:hover::before {
+    width: 100%;
+
+  }
+

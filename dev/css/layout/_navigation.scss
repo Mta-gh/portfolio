@@ -38,18 +38,19 @@
     }
     .nav-underlinks {
         // padding: 5px 20px;
-        border-bottom: 1px solid black;
+        // border-bottom: 1px solid black;
         cursor: pointer;
-    transition: all .1s ease;
+        text-decoration: underline;
 
-        &:hover {
-            color: aquamarine;
-        border-bottom: 1px solid aquamarine;
-
-        }
+        
     }
 }
 
 .haus303:hover {
     cursor: url(../img/squiggCursorAqua.png), auto;
+}
+
+.star__container {
+    display: flex;
+    align-items: center;
 }
