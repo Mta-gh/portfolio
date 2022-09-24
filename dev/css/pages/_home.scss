@@ -23,7 +23,7 @@
 }
 
 .weather {
-    background-image: url(../img/weather.png);
+    background-image: url(../img/weather.webp);
 }
 
 .simone {
@@ -35,18 +35,18 @@
 
 
 .travelista {
-    background-image: url(../img/travelista-scrnsht.png);
+    background-image: url(../img/travelista-scrnsht.webp);
 }
 
 .pato {
-    background-image: url(../img/pato-scrnsht.png);
+    background-image: url(../img/pato-scrnsht.webp);
     &:hover {
         filter: blur(3px) brightness(.7);
     }
 }
 
 .marco {
-    background-image: url(../img/marco.png);
+    background-image: url(../img/marco.webp);
     background-color: rgb(15,15,15);
     background-size: 95%;
     background-repeat: no-repeat;
@@ -63,19 +63,19 @@
 }
 
 .nestcam {
-    background-image: url(../img/nestcam-screen.jpg);
+    background-image: url(../img/nestcam-screen.webp);
     
 }
 
 .apple {
-    background-image: url(../img/apple-screen.jpg);
+    background-image: url(../img/apple-screen.webp);
 }
 
 .barok {
-    background-image: url(../img/zomerbar.jpg);
+    background-image: url(../img/zomerbar.webp);
 }
 
-.haus { background-image: url(../img/haus.jpg); }
+.haus { background-image: url(../img/haus.webp); }
 
 .with__details {
     &::before {
@@ -170,24 +170,24 @@
     //     content: 'Simone Café';
     // }
     
-    .tilt-card:nth-of-type(4)::after {
+    .tilt-card:nth-of-type(5)::after {
         content: 'Pato Place';
     }
     
     
     
-    .tilt-card:nth-of-type(5)::after {
+    .tilt-card:nth-of-type(6)::after {
         content: 'Marco Marino';
     }
     
     
     
-    .tilt-card:nth-of-type(6)::after {
+    .tilt-card:nth-of-type(7)::after {
         content: 'Nestcam';
     }
     
     
-    .tilt-card:nth-of-type(7)::after {
+    .tilt-card:nth-of-type(8)::after {
         content: 'Apple';
     }
     

@@ -34,6 +34,17 @@
     a { margin-left: .3rem; }
 }
 
+.p__flex__2 {
+    @media screen and (min-width : 1260px) {
+        display: flex;
+        a { margin-left: .3rem; }
+    }
+    @media screen and (max-width : 768px) {
+        display: flex;
+        a { margin-left: .3rem; }
+    }
+}
+
 // .container {
 //     overflow: hidden;
 //     display: flex;
