@@ -22,6 +22,10 @@
     }
 }
 
+.travellusion {
+    background-image: url(../../img/travellsuion.webp);
+}
+
 .weather {
     background-image: url(../img/weather.webp);
 }
@@ -55,7 +59,8 @@
 .apple, 
 .nestcam,
 .barok,
-.haus {
+.haus,
+.travellusion {
     filter: blur(0) brightness(.95);
     &:hover {
         filter: blur(3px) brightness(.8);
@@ -159,8 +164,14 @@
     content: 'Design, Html, CSS, JS';
 }
 
-
 .tilt-card:nth-of-type(4)::after {
+    content: 'Travellusion';
+}
+.tilt-card:nth-of-type(4)::before {
+    content: 'Design, Html, CSS, JS, Wordpress';
+}
+
+.tilt-card:nth-of-type(5)::after {
     content: 'Travelista';
 }
 
@@ -170,24 +181,24 @@
     //     content: 'Simone Café';
     // }
     
-    .tilt-card:nth-of-type(5)::after {
+    .tilt-card:nth-of-type(6)::after {
         content: 'Pato Place';
     }
     
     
     
-    .tilt-card:nth-of-type(6)::after {
+    .tilt-card:nth-of-type(7)::after {
         content: 'Marco Marino';
     }
     
     
     
-    .tilt-card:nth-of-type(7)::after {
+    .tilt-card:nth-of-type(8)::after {
         content: 'Nestcam';
     }
     
     
-    .tilt-card:nth-of-type(8)::after {
+    .tilt-card:nth-of-type(9)::after {
         content: 'Apple';
     }
     
