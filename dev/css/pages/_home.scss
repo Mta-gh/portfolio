@@ -60,6 +60,7 @@
 .nestcam,
 .barok,
 .haus,
+.wissper,
 .travellusion {
     filter: blur(0) brightness(.95);
     &:hover {
@@ -78,6 +79,10 @@
 
 .barok {
     background-image: url(../img/zomerbar.webp);
+}
+
+.wissper {
+    background-image: url(../img/wissper.webp);
 }
 
 .haus { background-image: url(../img/haus.webp); }
@@ -156,22 +161,30 @@
     content: 'Design, Html, CSS, JS, Wordpress Integration';
 }
 
-
 .tilt-card:nth-of-type(3)::after {
-    content: 'Weather App';
+    content: 'WISSPER';
+    white-space: nowrap;
 }
 .tilt-card:nth-of-type(3)::before {
+    content: 'Html, CSS, JS, Wordpress Integration';
+}
+
+
+.tilt-card:nth-of-type(4)::after {
+    content: 'Weather App';
+}
+.tilt-card:nth-of-type(4)::before {
     content: 'Design, Html, CSS, JS';
 }
 
-.tilt-card:nth-of-type(4)::after {
+.tilt-card:nth-of-type(5)::after {
     content: 'Travellusion';
 }
-.tilt-card:nth-of-type(4)::before {
+.tilt-card:nth-of-type(5)::before {
     content: 'Design, Html, CSS, JS, Wordpress';
 }
 
-.tilt-card:nth-of-type(5)::after {
+.tilt-card:nth-of-type(6)::after {
     content: 'Travelista';
 }
 
@@ -181,24 +194,24 @@
     //     content: 'Simone Café';
     // }
     
-    .tilt-card:nth-of-type(6)::after {
+    .tilt-card:nth-of-type(7)::after {
         content: 'Pato Place';
     }
     
     
     
-    .tilt-card:nth-of-type(7)::after {
+    .tilt-card:nth-of-type(8)::after {
         content: 'Marco Marino';
     }
     
     
     
-    .tilt-card:nth-of-type(8)::after {
+    .tilt-card:nth-of-type(9)::after {
         content: 'Nestcam';
     }
     
     
-    .tilt-card:nth-of-type(9)::after {
+    .tilt-card:nth-of-type(10)::after {
         content: 'Apple';
     }
     
@@ -208,7 +221,6 @@
     .scroll {
         display: flex;
         width: 100%;
-        
         div {
             font-weight: 900;
             font-size: 4em;
@@ -223,30 +235,19 @@
             filter: blur(20px) grayscale(1);
             letter-spacing: .2em;
             opacity: .5;
-            
-            
-            
             &:nth-child(2) {
                 animation: animate2 240s -120s linear infinite;
             }
         }
-        
-        
     }
     
     @keyframes deblur {
         0% {
             opacity: 0;
             filter: blur(30px);
-            // transform: scale(1.2);
         }
-        // 75% {
-            //     transform: scale(1);
-            
-            // }
             100% {
                 opacity: 1;
                 filter: blur(0px);
-                
             }
         }
