@@ -87,6 +87,8 @@
 
 .haus { background-image: url(../img/haus.webp); }
 
+.zinnegames { background-image: url(../img/zinnegames-small.webp); }
+
 .with__details {
     &::before {
         text-shadow: 0 0 0.7em rgb(0 0 0 / 40%);
@@ -154,37 +156,45 @@
 }
 
 .tilt-card:nth-of-type(2)::after {
-    content: 'Barok Zomerbar';
+    content: 'Zinne Games Festival';
     white-space: nowrap;
 }
 .tilt-card:nth-of-type(2)::before {
-    content: 'Design, Html, CSS, JS, Wordpress Integration';
+    content: 'Html, CSS, JS/Jquery, PHP, Wordpress Integration';
 }
 
 .tilt-card:nth-of-type(3)::after {
-    content: 'WISSPER';
+    content: 'Barok Zomerbar';
     white-space: nowrap;
 }
 .tilt-card:nth-of-type(3)::before {
+    content: 'Design, Html, CSS, JS, Wordpress Integration';
+}
+
+.tilt-card:nth-of-type(4)::after {
+    content: 'WISSPER';
+    white-space: nowrap;
+}
+.tilt-card:nth-of-type(4)::before {
     content: 'Html, CSS, JS, Wordpress Integration';
 }
 
 
-.tilt-card:nth-of-type(4)::after {
+.tilt-card:nth-of-type(5)::after {
     content: 'Weather App';
 }
-.tilt-card:nth-of-type(4)::before {
+.tilt-card:nth-of-type(5)::before {
     content: 'Design, Html, CSS, JS';
 }
 
-.tilt-card:nth-of-type(5)::after {
+.tilt-card:nth-of-type(6)::after {
     content: 'Travellusion';
 }
-.tilt-card:nth-of-type(5)::before {
+.tilt-card:nth-of-type(6)::before {
     content: 'Design, Html, CSS, JS, Wordpress';
 }
 
-.tilt-card:nth-of-type(6)::after {
+.tilt-card:nth-of-type(7)::after {
     content: 'Travelista';
 }
 
@@ -194,24 +204,24 @@
     //     content: 'Simone Café';
     // }
     
-    .tilt-card:nth-of-type(7)::after {
+    .tilt-card:nth-of-type(8)::after {
         content: 'Pato Place';
     }
     
     
     
-    .tilt-card:nth-of-type(8)::after {
+    .tilt-card:nth-of-type(9)::after {
         content: 'Marco Marino';
     }
     
     
     
-    .tilt-card:nth-of-type(9)::after {
+    .tilt-card:nth-of-type(10)::after {
         content: 'Nestcam';
     }
     
     
-    .tilt-card:nth-of-type(10)::after {
+    .tilt-card:nth-of-type(11)::after {
         content: 'Apple';
     }
     
